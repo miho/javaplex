@@ -1,0 +1,53 @@
+R/PLEX BINDING README
+
+INSTALLATION INSTRUCTIONS
+---------------------------------------------------------------------------
+* The included Makefile has 3 targets:
+   - build - executes the R equivalent of 'make' 
+   - check - if unit tests were included, would run these. Also checks
+		 documentation/etc. for correctness. 
+   - install - installs the module to given destination.
+
+* By default, the given destination is ~/Rbin (so the module is not
+  installed globally). the -l option can be removed to have it be installed
+  globally. ~/Rbin must exist prior to the install to avoid an error.
+
+* --configure-args has two arguments that will need to be set:
+   - --with-jre - the default is the i386 link for Stanford's linux 
+		clusters. include/ should be a subdirectory of this dir.
+   - --with-jplex - an absolute path to jplex.jar. It cannot contain
+		symbols such as '~', so home directories need to be explictly
+		pathed out. 
+
+* The JRE option sets the rpath variable. This overrides LD_LIBRARY_PATH,
+  because R sets its own LD_LIBRARY_PATH. Unfortunate, but necessary.
+* The JPLEX option creates a file PLEX3/R/config.R with a variable
+  jplex.path, used to set the Java classpath when the R module loads
+  PLEX. This value can be changed to use a different jar file. 
+
+USAGE INFORMATION
+---------------------------------------------------------------------------
+To load the library, if you install it to ~/Rbin as by default:
+	library(PLEX3, lib.loc="~/Rbin")
+
+This is the equivalent of the matlab example in overview.htm:
+	pointdata <- read.table("plex_torus_data.txt")
+	stream <- rips.stream(pointdata, 0.053096, 0.53096, 3)
+	intervals <- persistence.intervals(stream)
+	filter.infinite(intervals)
+
+This is the equivalent of the unit test for LazyWitnessStream:
+	data <- random.euclidean.array.data(5000,3);
+	landmarks <- make.random.landmarks(data, 40);
+	stream <- lazy.witness.stream(data, .00001, 3, 
+			estimate.rmax(data, landmarks), 2, landmarks);
+	intervals <- persistence.intervals(stream);
+
+This is the current syntax for ExplicitStream:
+	stream <- explicit.stream()
+	open(stream)
+	add.simplex(stream, c(3,5,1), 4.2)
+	remove.simplex(stream, c(3,5,1))
+	close(stream)
+	intervals <- persistence.intervals(stream)
+	filtered <- filter.infinite(intervals)
