@@ -10,23 +10,23 @@ For persistent homology and its capabilities, we recommend the survey article [T
 
 ## How to get started?
   
-* Start playing around with the latest [matlab examples](http://javaplex.googlecode.com/files/matlab-examples-4.1.0.tar.gz)
-* Read the [tutorial](http://javaplex.googlecode.com/svn/trunk/reports/javaplex_tutorial/javaplex_tutorial.pdf)
-* Take a look at the [documentation overview](http://code.google.com/p/javaplex/wiki/javaPlex)
-* Download the latest [jar file](http://javaplex.googlecode.com/files/javaplex-4.1.0.jar) and start playing with the Java code
+* Start playing around with the latest [matlab examples](http://raw.githubusercontent.com/javaplex/javaplex/4.2.0/dist/matlab-examples-4.2.0.tar.gz)
+* Read the [tutorial](http://github.com/javaplex/javaplex/wiki/Tutorial)
+* Take a look at the [documentation overview](http://github.com/javaplex/javaplex/wiki/Overview)
+* Download the latest [jar file](http://raw.githubusercontent.com/javaplex/javaplex/4.2.0/dist/javaplex-4.2.0.jar) and start playing with the Java code
 
 ## For more information
 
-* Read the [documentation](http://code.google.com/p/javaplex/wiki/javaPlex)
-* Read about the [architecture](http://code.google.com/p/javaplex/wiki/ArchitectureNotes) of `javaPlex`
-* Look at the [javadoc](http://javaplex.googlecode.com/svn/trunk/doc/index.html)
+* Read the [documentation](http://github.com/javaplex/javaplex/wiki/Overview)
+* Read about the [architecture](http://github.com/javaplex/javaplex/wiki/Architecture-Notes) of `javaPlex`
+* Look at the [javadoc](http://javaplex.github.io/javaplex/doc.4.2.0/)
 
 ## Citing `javaPlex`
 
-To cite `javaPlex`, please consult the [http://code.google.com/p/javaplex/wiki/Citation citation] page.
+To cite `javaPlex`, please consult the [citation](http://github.com/javaplex/javaplex/wiki/Citation-Information) page.
 
 ## Updates
   
 * April, 2014: Google Code hosting abandoned
 * May 10, 2012: Version 4.1.0 has been released and is available in the Downloads section
-* For frequently asked questions regarding `javaPlex` and troubleshooting information, consult the [troubleshooting](http://code.google.com/p/javaplex/wiki/Troubleshooting) page.
+* For frequently asked questions regarding `javaPlex` and troubleshooting information, consult the [troubleshooting](http://github.com/javaplex/javaplex/wiki/Troubleshooting) page.
