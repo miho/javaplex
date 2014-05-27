@@ -1,0 +1,13 @@
+First author's          Family Name  : Adams 
+First author's          Given  Name  : Henry
+ 
+Corresponding author's  Family Name  : Vejdemo-Johansson
+Corresponding author's  Given  Name  : Mikael
+Corresponding author's  Email address: mikael@johanssons.org
+
+-----------
+Definitions
+-----------
+First author         : the author whose name appears first in the extended abstract.
+Corresponding author : the author who will communicate with the publisher.
+ 
